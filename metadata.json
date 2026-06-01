@@ -1,5 +1,8 @@
-{
-  "name": "B급 감성 팩폭 AI 수면 요정",
-  "description": "중고등학생들의 수면 시간을 계산해주고 잔소리하는 팩트폭력 AI 수면 요정 앱. 도파민 중독자들을 위한 킹받는 수면 가이드.",
-  "requestFramePermissions": []
-}
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example

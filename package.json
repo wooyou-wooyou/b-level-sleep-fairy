@@ -1,37 +1,31 @@
-{
-  "name": "react-example",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@google/genai": "^1.29.0",
-    "@tailwindcss/vite": "^4.1.14",
-    "@vitejs/plugin-react": "^5.0.4",
-    "clsx": "^2.1.1",
-    "dotenv": "^17.2.3",
-    "express": "^4.21.2",
-    "lucide-react": "^0.546.0",
-    "motion": "^12.23.24",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "recharts": "^3.8.0",
-    "tailwind-merge": "^3.5.0",
-    "vite": "^6.2.0"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^22.14.0",
-    "autoprefixer": "^10.4.21",
-    "tailwindcss": "^4.1.14",
-    "tsx": "^4.21.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
-  }
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- PWA Primary Settings -->
+    <title>B급 감성 팩폭 AI 수면 요정</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#008080" />
+    <meta name="description" content="중고등학생들의 수면 시간을 계산해주고 잔소리하는 팩트폭력 AI 수면 요정 앱" />
+    
+    <!-- iOS / Apple Web App Settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="팩폭 수면요정" />
+    <link rel="apple-touch-icon" href="/pwa-icon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/pwa-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/pwa-icon.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/pwa-icon.png" />
+
+    <!-- Microsoft / Windows Tile Settings -->
+    <meta name="msapplication-TileImage" content="/pwa-icon.png" />
+    <meta name="msapplication-TileColor" content="#008080" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
