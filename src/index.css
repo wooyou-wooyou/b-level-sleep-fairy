@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-win-bg: #c0c0c0;
+  --color-win-border-light: #ffffff;
+  --color-win-border-dark: #808080;
+  --color-win-blue: #000080;
+  --color-neon-green: #00ff00;
+  --color-neon-pink: #ff00ff;
+  --color-neon-yellow: #ffff00;
+}
+
+@layer base {
+  body {
+    background-color: #008080; /* Classic Win95 teal */
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .win95-box {
+    background-color: var(--color-win-bg);
+    border-top: 2px solid var(--color-win-border-light);
+    border-left: 2px solid var(--color-win-border-light);
+    border-right: 2px solid var(--color-win-border-dark);
+    border-bottom: 2px solid var(--color-win-border-dark);
+    box-shadow: 1px 1px 0px 0px black;
+  }
+
+  .win95-button {
+    background-color: var(--color-win-bg);
+    border-top: 2px solid var(--color-win-border-light);
+    border-left: 2px solid var(--color-win-border-light);
+    border-right: 2px solid var(--color-win-border-dark);
+    border-bottom: 2px solid var(--color-win-border-dark);
+    @apply px-4 py-1 active:border-t-win-border-dark active:border-l-win-border-dark active:border-r-win-border-light active:border-b-win-border-light active:translate-x-[1px] active:translate-y-[1px];
+  }
+
+  .win95-title-bar {
+    background: linear-gradient(90deg, var(--color-win-blue), #1084d0);
+    @apply text-white px-2 py-1 flex justify-between items-center font-bold text-sm;
+  }
+
+  .pixel-border {
+    image-rendering: pixelated;
+  }
+}
